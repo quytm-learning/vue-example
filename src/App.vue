@@ -1,26 +1,31 @@
 <template>
     <div id="app">
         <Header/>
-        <UserList/>
+        <div class="container">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
-    import UserList from "./components/UserList";
+    // import HelloWorld from './components/HelloWorld.vue'
+    // import UserList from "./components/UserList";
     import Header from "./components/common/Header";
 
     export default {
         name: 'app',
         components: {
             Header,
-            UserList,
-            HelloWorld
+            // UserList,
+            // HelloWorld
         }
     }
 </script>
 
 <style>
+
+    @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
     body {
         margin: 0;
         padding: 0;

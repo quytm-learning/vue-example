@@ -13,7 +13,7 @@
 
 <style scoped>
     .app-header {
-        position: fixed;
+        /*position: fixed;*/
         width: 100%;
         height: 40px;
         z-index: 100;
@@ -30,5 +30,8 @@
     }
     .header-title {
         display: inline;
+        font-weight: bold;
+        color: rgba(0,0,0,0.62);
+        font-size: 24px;
     }
 </style>
